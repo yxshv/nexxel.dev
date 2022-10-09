@@ -24,7 +24,7 @@ specifiers:
   debounce: ^1.2.1
   eslint: 8.18.0
   eslint-config-next: 12.3.1
-  framer-motion: ^7.5.0
+  framer-motion: ^7.5.3
   hast-util-to-string: ^2.0.0
   next: 12.3.1
   next-auth: ^4.10.3
@@ -65,7 +65,7 @@ dependencies:
   contentlayer: 0.2.6
   date-fns: 2.29.1
   debounce: 1.2.1
-  framer-motion: 7.5.0_biqbaboplfbrettd7655fr4n2y
+  framer-motion: 7.5.3_biqbaboplfbrettd7655fr4n2y
   next: 12.3.1_biqbaboplfbrettd7655fr4n2y
   next-auth: 4.10.3_biqbaboplfbrettd7655fr4n2y
   next-contentlayer: 0.2.6_azq6kxkn3od7qdylwkyksrwopy
@@ -2339,8 +2339,8 @@ packages:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: true
 
-  /framer-motion/7.5.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-uz42xPsO5VmoRrT0Q2I1UZBvQ+Px0Is2c+7mum2z/UhC9m2Q1/2DmSR82ncc5qRtO/4OerNEm473ktOEX3unRg==}
+  /framer-motion/7.5.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-VvANga9Z7bYtKMAsM/je81FwJDHfThOYywN04xVQ4OGdMVY09Bowx/q7nZd6XtytLuv6byc6GT1mYwag+SQ/nw==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
