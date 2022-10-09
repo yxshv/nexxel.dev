@@ -1,7 +1,15 @@
+import { AnimatePresence, motion, Variants } from "framer-motion";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { FC, ReactNode, useEffect, useState } from "react";
 import { FiArrowUp } from "react-icons/fi";
+
+const variants: Variants = {
+  hidden: { opacity: 0, x: -200, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+}
+
 
 import Navbar from "./Navbar";
 
@@ -76,11 +84,17 @@ const Wrapper: FC<{
           <Navbar />
         </div>
 
-        <main id="main">
+        <motion.main
+          className="min-h-screen"
+          initial="hidden"
+          animate="enter"
+          exit="exit"
+          variants={variants}
+        >
           {children}
           <div className="pb-8" />
           <BackToTop />
-        </main>
+        </motion.main>
 
         {/* <Footer /> */}
       </div>

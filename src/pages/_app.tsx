@@ -6,6 +6,7 @@ import type { Session } from "next-auth";
 
 import "~/styles/globals.css";
 import { trpc } from "~/utils/trpc";
+import { AnimatePresence, motion } from "framer-motion";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -22,7 +23,9 @@ const MyApp: AppType<{ session: Session | null }> = ({
         ></script>
       </Head>
       <SessionProvider session={session}>
-        <Component {...pageProps} />
+        <AnimatePresence mode="wait" exitBeforeEnter onExitComplete={() => window.scrollTo(0, 0)}>
+          <Component {...pageProps} />
+        </AnimatePresence>
       </SessionProvider>
     </>
   );
